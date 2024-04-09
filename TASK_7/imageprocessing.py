@@ -1,11 +1,10 @@
-
-# import opencv 
 import cv2
   
 path=r"C:\\Users\\chint\\AppData\\Local\\Programs\\Python\\Python310\\Summer Project Robotics Club Task\\Screenshot 2024-04-08 095210.png" 
 
 image = cv2.imread(path)
-cv2.imshow('Original', image)
+#cv2.imshow('Original', image)
+image = cv2.GaussianBlur(image, (9, 9), 0) 
 
 cv2.waitKey(0) 
   
